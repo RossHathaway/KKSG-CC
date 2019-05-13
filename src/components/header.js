@@ -22,7 +22,6 @@ const Header = () => (
       display: flex;
       justify-content: center;
       background: lightYellow;
-      margin-bottom: 1.45rem;
       width: 100vw;
       padding: 0.5rem 0.5rem;
       &::after {

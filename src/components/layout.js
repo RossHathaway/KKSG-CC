@@ -38,18 +38,23 @@ const Layout = ({ children }) => (
     <div
       css={css`
         display: flex;
-        flex-direction: column;
+        width: auto;
       `}
     >
       <Menu />
-      <main>{children}</main>
+      <main
+        css={css`
+          padding-left: 2rem;
+        `}
+      >
+        {children}
+        <footer>
+          © {new Date().getFullYear()}, Built with
+          {` `}
+          <a href="https://www.gatsbyjs.org">Gatsby</a>
+        </footer>
+      </main>
     </div>
-
-    <footer>
-      © {new Date().getFullYear()}, Built with
-      {` `}
-      <a href="https://www.gatsbyjs.org">Gatsby</a>
-    </footer>
   </>
 )
 

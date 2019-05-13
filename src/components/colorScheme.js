@@ -4,5 +4,5 @@ module.exports = {
   darkYellow: "#F2B500",
   medBlue: "#01018E",
   darkGray: "#565656",
-  lightGray: "#8C8C8C",
+  lightGray: "#DBDBDB",
 }

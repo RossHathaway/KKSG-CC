@@ -15,18 +15,42 @@ import {
 const Container = styled.nav`
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  max-width: 70px;
+  background: ${lightGray};
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  min-width: 250px;
+`
+const Button = styled.button`
+  padding: 0.5em 1em;
+  margin: 5px 0;
+  font-size: 28px;
+  color: ${darkRed};
+  border: solid ${darkRed} 1px;
 `
 
 const Menu = () => (
   <Container>
-    <Link to="/">Home</Link>
-    <Link to="/calendar">Calendar</Link>
-    <Link to="/practice">Our regular practice</Link>
-    <Link to="/teachers">Our teachers</Link>
-    <Link to="/support">Support Tibetan Nuns</Link>
-    <Link to="/learn">Learn More</Link>
+    <Button>
+      <Link to="/">Home</Link>
+    </Button>
+    <Button>
+      <Link to="/calendar">Calendar</Link>
+    </Button>
+
+    <Button>
+      <Link to="/practice">Practice with us</Link>
+    </Button>
+
+    <Button>
+      <Link to="/teachers">Our teachers</Link>
+    </Button>
+
+    <Button>
+      <Link to="/support">Support Tibetan Nuns</Link>
+    </Button>
+
+    <Button>
+      <Link to="/learn">Learn More</Link>
+    </Button>
   </Container>
 )
 

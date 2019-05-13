@@ -1,5 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
+import { Global, css } from "@emotion/core"
+import styled from "@emotion/styled"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
@@ -11,7 +13,13 @@ const IndexPage = () => (
       title="Home"
       keywords={[`Cape Cod`, `Buddhism`, `Tibet`, `meditation`]}
     />
-    <h1>Welcome</h1>
+    <h1
+      css={css`
+        margin: 0.5em 0;
+      `}
+    >
+      Welcome
+    </h1>
     <p>
       We are a small group of Dharma practitioners that meet on Sundays at 11 am
       for an hour long meditation on Chenrezig, the Buddha of Compassion.
