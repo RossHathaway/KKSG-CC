@@ -8,6 +8,7 @@ import {
   lightYellow,
   darkYellow,
   medBlue,
+  lightBlue,
   darkGray,
   lightGray,
 } from "./colorScheme.js"
@@ -18,39 +19,79 @@ const Container = styled.nav`
   background: ${lightGray};
   padding: 0.5em 0.5em 0.5em 0.5em;
   min-width: 250px;
+  /* height: auto; */
 `
-const Button = styled.button`
+const linkStyle = `
   padding: 0.5em 1em;
   margin: 5px 0;
   font-size: 28px;
   color: ${darkRed};
-  border: solid ${darkRed} 1px;
+  border: solid ${darkRed} 2px;
+  text-decoration: none;
+  :hover {
+    background-color: ${lightBlue};
+  }
+  :active {
+    background-color: ${darkGray};
+    border: none;
+  }
 `
 
 const Menu = () => (
   <Container>
-    <Button>
-      <Link to="/">Home</Link>
-    </Button>
-    <Button>
-      <Link to="/calendar">Calendar</Link>
-    </Button>
+    <Link
+      to="/"
+      css={css`
+        ${linkStyle}
+      `}
+    >
+      Home
+    </Link>
 
-    <Button>
-      <Link to="/practice">Practice with us</Link>
-    </Button>
+    <Link
+      to="/calendar"
+      css={css`
+        ${linkStyle}
+      `}
+    >
+      Calendar
+    </Link>
 
-    <Button>
-      <Link to="/teachers">Our teachers</Link>
-    </Button>
+    <Link
+      to="/practice"
+      css={css`
+        ${linkStyle}
+      `}
+    >
+      Practice with us
+    </Link>
 
-    <Button>
-      <Link to="/support">Support Tibetan Nuns</Link>
-    </Button>
+    <Link
+      to="/teachers"
+      css={css`
+        ${linkStyle}
+      `}
+    >
+      Our teachers
+    </Link>
 
-    <Button>
-      <Link to="/learn">Learn More</Link>
-    </Button>
+    <Link
+      to="/support"
+      css={css`
+        ${linkStyle}
+      `}
+    >
+      Support Tibetan Nuns
+    </Link>
+
+    <Link
+      to="/learn"
+      css={css`
+        ${linkStyle}
+      `}
+    >
+      Learn More
+    </Link>
   </Container>
 )
 

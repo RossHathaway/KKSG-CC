@@ -30,7 +30,6 @@ const Layout = ({ children }) => (
         }
         body {
           margin: 0;
-          /* max-width: 100vw; */
         }
       `}
     />
@@ -39,7 +38,6 @@ const Layout = ({ children }) => (
     <div
       css={css`
         display: flex;
-        /* width: auto; */
       `}
     >
       <Menu />
