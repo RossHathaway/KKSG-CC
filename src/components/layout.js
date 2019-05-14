@@ -47,7 +47,12 @@ const Layout = ({ children }) => (
         `}
       >
         {children}
-        <footer>
+        <footer
+        // css={css`
+        //   display: flex;
+        //   justify-content: flex-end;
+        // `}
+        >
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>

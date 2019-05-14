@@ -1,15 +1,15 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import { Global, css } from "@emotion/core"
+import { css } from "@emotion/core"
 import styled from "@emotion/styled"
 import {
   darkRed,
-  lightYellow,
-  darkYellow,
-  medBlue,
-  darkGray,
-  lightGray,
+  // lightYellow,
+  // darkYellow,
+  // medBlue,
+  // darkGray,
+  // lightGray,
 } from "./colorScheme.js"
 
 const Spacer = styled.div`

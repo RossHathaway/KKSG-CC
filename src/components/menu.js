@@ -1,13 +1,13 @@
 import { Link } from "gatsby"
 // import PropTypes from "prop-types"
 import React from "react"
-import { Global, css } from "@emotion/core"
+import { css } from "@emotion/core"
 import styled from "@emotion/styled"
 import {
   darkRed,
-  lightYellow,
-  darkYellow,
-  medBlue,
+  // lightYellow,
+  // darkYellow,
+  // medBlue,
   lightBlue,
   darkGray,
   lightGray,
@@ -19,7 +19,6 @@ const Container = styled.nav`
   background: ${lightGray};
   padding: 0.5em 0.5em 0.5em 0.5em;
   min-width: 250px;
-  /* height: auto; */
 `
 const linkStyle = `
   padding: 0.5em 1em;
