@@ -75,12 +75,12 @@ const Menu = () => (
     </Link>
 
     <Link
-      to="/support"
+      to="/helpNuns"
       css={css`
         ${linkStyle}
       `}
     >
-      Support Tibetan Nuns
+      Help Tibetan Nuns
     </Link>
 
     <Link
