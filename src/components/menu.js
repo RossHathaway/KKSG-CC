@@ -16,7 +16,7 @@ import {
 const Container = styled.nav`
   display: flex;
   flex-direction: column;
-  background: ${lightGray};
+  background: rgb(${lightGray});
   padding: 0.5em 0.5em 0.5em 0.5em;
   min-width: 250px;
 `
@@ -24,8 +24,8 @@ const linkStyle = `
   padding: 0.5em 1em;
   margin: 5px 0;
   font-size: 28px;
-  color: ${darkRed};
-  border: solid ${darkRed} 2px;
+  color: rgb(${darkRed});
+  border: solid rgb(${darkRed}) 2px;
   text-decoration: none;
   :hover {
     background-color: ${lightBlue};

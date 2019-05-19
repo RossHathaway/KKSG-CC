@@ -12,6 +12,15 @@ import { Global, css } from "@emotion/core"
 
 import Header from "./header"
 import Menu from "./menu"
+import {
+  darkRed,
+  lightYellow,
+  darkYellow,
+  medBlue,
+  lightBlue,
+  darkGray,
+  lightGray,
+} from "./colorScheme"
 
 const Layout = ({ children }) => (
   <>
@@ -43,15 +52,36 @@ const Layout = ({ children }) => (
       <Menu />
       <main
         css={css`
-          padding-left: 2rem;
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          background-color: darkRed;
         `}
       >
-        {children}
+        <div
+          css={css`
+            display: flex;
+            justify-content: center;
+            padding: 60px 0 80px;
+          `}
+        >
+          <div
+            css={css`
+              width: 90%;
+              max-width: 850px;
+              padding: 20px 30px 50px 30px;
+              /* margin-top: 60px; */
+              background-color: rgba(${lightGray}, 0.7);
+            `}
+          >
+            {children}
+          </div>
+        </div>
         <footer
-        // css={css`
-        //   display: flex;
-        //   justify-content: flex-end;
-        // `}
+          css={css`
+            align-self: flex-end;
+            margin-top: auto;
+          `}
         >
           © {new Date().getFullYear()}, Built with
           {` `}

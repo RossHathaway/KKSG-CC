@@ -49,7 +49,7 @@ const Header = () => (
       <Link
         to="/"
         style={{
-          color: darkRed,
+          color: `rgb(${darkRed})`,
           textDecoration: `none`,
         }}
       >
