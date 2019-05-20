@@ -73,6 +73,7 @@ const Layout = ({ children }) => (
               /* background-color: rgba(${lightGray}, 0.8); */
               /* background-color: rgba(${lightYellow}, 0.6); */
               background-color: rgba(255,255,255, 0.6);
+              color: ${medBlue};
             `}
           >
             {children}

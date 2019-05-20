@@ -22,8 +22,9 @@ const Header = () => (
       display: flex;
       justify-content: center;
       background: rgb(${lightYellow});
-      width: 100%;
       padding: 0.5rem 0.5rem;
+      border: 2px solid rgb(${darkRed});
+      margin: 7px;
       /* what does below do???? */
       &::after {
         flex: 1;

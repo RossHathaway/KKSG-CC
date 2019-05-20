@@ -20,7 +20,7 @@ const Container = styled.nav`
   padding: 0.5em 0.5em 0.5em 0.5em;
   min-width: 250px;
 `
-const linkStyle = `
+const PageLink = styled(Link)`
   padding: 0.5em 1em;
   margin: 5px 0;
   font-size: 28px;
@@ -38,59 +38,17 @@ const linkStyle = `
 
 const Menu = () => (
   <Container>
-    <Link
-      to="/"
-      css={css`
-        ${linkStyle}
-      `}
-    >
-      Home
-    </Link>
+    <PageLink to="/">Home</PageLink>
 
-    <Link
-      to="/calendar"
-      css={css`
-        ${linkStyle}
-      `}
-    >
-      Calendar
-    </Link>
+    <PageLink to="/calendar">Calendar</PageLink>
 
-    <Link
-      to="/practice"
-      css={css`
-        ${linkStyle}
-      `}
-    >
-      Practice with us
-    </Link>
+    <PageLink to="/practice">Practice with us</PageLink>
 
-    <Link
-      to="/teachers"
-      css={css`
-        ${linkStyle}
-      `}
-    >
-      Our teachers
-    </Link>
+    <PageLink to="/teachers">Our teachers</PageLink>
 
-    <Link
-      to="/helpNuns"
-      css={css`
-        ${linkStyle}
-      `}
-    >
-      Help Tibetan Nuns
-    </Link>
+    <PageLink to="/helpNuns">Help Tibetan Nuns</PageLink>
 
-    <Link
-      to="/learn"
-      css={css`
-        ${linkStyle}
-      `}
-    >
-      Learn More
-    </Link>
+    <PageLink to="/learn">Learn More</PageLink>
   </Container>
 )
 
