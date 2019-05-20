@@ -12,10 +12,11 @@ const HelpNuns = () => (
     </h1>
     <p>
       Help Tibetan Nuns, Inc. is a non-profit organization that raises money for
-      education, health, and construction for nuns in the Himalayan region. Amy
-      McCracken started Help Tibetan Nuns in 2011 after she visited Thrangu Kong
-      Jo Sherab Ling, a nunnery in Eastern Tibet. They had been hit by an
-      earthquake the year before, which killed around 2,700 people in the area.
+      education, health, and building construction for nuns in the Himalayan
+      region. Amy McCracken started Help Tibetan Nuns in 2011 after she visited
+      Thrangu Kong Jo Sherab Ling, a nunnery in Eastern Tibet. This region was
+      hit by an earthquake the year before, which killed around 2,700 people in
+      the area.
     </p>
   </Layout>
 )

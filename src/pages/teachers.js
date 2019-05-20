@@ -14,21 +14,20 @@ const Teachers = () => (
     </p>
     <p>
       Our lineage is the Karma Kagyu tradition of Tibetan Buddhism. The Kagyu
-      tradition is headed by HH the 17th Gyalwang Karmapa, Ogyen Trinley Dorje.{" "}
-      {` `}
+      tradition is headed by His Holiness the 17th Gyalwang Karmapa, Ogyen
+      Trinley Dorje. {` `}
       <a href="https://kagyuoffice.org/">HH Karmapa's website</a>.
     </p>
     <p>
       HH Karmapa's main center in the US is{" "}
-      <a href="https://kagyu.org/">Karma Triyana Dharmachakra</a> in upstate NY.
-      The abbot there is{" "}
+      <a href="https://kagyu.org/">Karma Triyana Dharmachakra</a> (KTD) in
+      Woodstock, NY. The abbot there is{" "}
       <a href="https://kagyu.org/khenpo-karthar-rinpoche/">
         Khenpo Karthar Rinpoche
       </a>
-      , who is one of our teachers here, and sometimes students on the Cape will
-      drive up to visit KTD. We also have guests teachers from KTD visit the
-      Cape occasionally, so check our <Link to="/calendar">calendar</Link> page
-      to see if there is anything happening soon.
+      . We occasionally have guests teachers from KTD visiting the Cape - check
+      our <Link to="/calendar">calendar</Link> page to see if there are special
+      events coming up.
     </p>
     <p />
     <p />

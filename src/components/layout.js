@@ -70,8 +70,9 @@ const Layout = ({ children }) => (
               width: 90%;
               max-width: 850px;
               padding: 20px 30px 50px 30px;
-              /* margin-top: 60px; */
-              background-color: rgba(${lightGray}, 0.7);
+              /* background-color: rgba(${lightGray}, 0.8); */
+              /* background-color: rgba(${lightYellow}, 0.6); */
+              background-color: rgba(255,255,255, 0.6);
             `}
           >
             {children}

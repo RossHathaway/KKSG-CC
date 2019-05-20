@@ -5,7 +5,7 @@ import { css } from "@emotion/core"
 import styled from "@emotion/styled"
 import {
   darkRed,
-  // lightYellow,
+  lightYellow,
   // darkYellow,
   // medBlue,
   // darkGray,
@@ -21,7 +21,7 @@ const Header = () => (
     css={css`
       display: flex;
       justify-content: center;
-      background: lightYellow;
+      background: rgb(${lightYellow});
       width: 100%;
       padding: 0.5rem 0.5rem;
       /* what does below do???? */
