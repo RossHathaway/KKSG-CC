@@ -19,45 +19,52 @@ const Spacer = styled.div`
 const Header = () => (
   <header
     css={css`
-      display: flex;
-      justify-content: center;
       background: rgb(${lightYellow});
-      padding: 0.5rem 0.5rem;
-      border: 2px solid rgb(${darkRed});
-      margin: 7px;
-      /* what does below do???? */
-      &::after {
-        flex: 1;
-      }
+      overflow: auto;
     `}
   >
-    <Spacer>
-      <button
-        css={css`
-          /* flex: 1; */
-        `}
-      >
-        Menu
-      </button>
-    </Spacer>
-    <h1
+    <div
       css={css`
-        margin: 0;
-        margin-left: auto;
-        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        background: rgb(${lightYellow});
+        padding: 0.5rem 0.5rem;
+        /* border: 2px solid darkred; */
+        margin: 7px;
+        /* what does below do???? */
+        &::after {
+          flex: 1;
+        }
       `}
     >
-      <Link
-        to="/"
-        style={{
-          color: `rgb(${darkRed})`,
-          textDecoration: `none`,
-        }}
+      <Spacer>
+        <button
+          css={css`
+            /* flex: 1; */
+          `}
+        >
+          Menu
+        </button>
+      </Spacer>
+      <h1
+        css={css`
+          margin: 0;
+          margin-left: auto;
+          margin-right: auto;
+        `}
       >
-        Cape Cod Karma Kagyu Study Group
-      </Link>
-    </h1>
-    <Spacer />
+        <Link
+          to="/"
+          style={{
+            color: `darkred`,
+            textDecoration: `none`,
+          }}
+        >
+          Cape Cod Karma Kagyu Study Group
+        </Link>
+      </h1>
+      <Spacer />
+    </div>
   </header>
 )
 

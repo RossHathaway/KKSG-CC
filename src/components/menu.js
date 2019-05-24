@@ -19,13 +19,14 @@ const Container = styled.nav`
   background: rgb(${lightGray});
   padding: 0.5em 0.5em 0.5em 0.5em;
   min-width: 250px;
+  /* border-top: solid darkred 2px; */
 `
 const PageLink = styled(Link)`
   padding: 0.5em 1em;
   margin: 5px 0;
   font-size: 28px;
-  color: rgb(${darkRed});
-  border: solid rgb(${darkRed}) 2px;
+  color: darkred;
+  border: solid darkred 2px;
   text-decoration: none;
   :hover {
     background-color: ${lightBlue};
