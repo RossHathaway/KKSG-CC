@@ -37,7 +37,8 @@ const IndexPage = () => (
       We also organize events - check out our{" "}
       <Link to="/calendar/">calendar</Link> for more info.
     </p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+    <div>
+      {/* style={{ maxWidth: `300px`, marginBottom: `1.45rem` }} */}
       <Image />
     </div>
   </Layout>
