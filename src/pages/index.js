@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import { Global, css } from "@emotion/core"
+import { css } from "@emotion/core"
 import styled from "@emotion/styled"
 
 import Layout from "../components/layout"
@@ -17,6 +17,7 @@ const IndexPage = () => (
       title="Home"
       keywords={[`Cape Cod`, `Buddhism`, `Tibet`, `meditation`]}
     />
+
     <h1
       css={css`
         margin: 0 0 0.5em;

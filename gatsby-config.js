@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Cape Cod KKSG`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `A Karma Kagyu Tibetan Buddhist group in Cape Cod (Hyannis, MA) that meets for weekly meditations and organizes special events`,
     author: `@gatsbyjs`,
   },
   plugins: [
