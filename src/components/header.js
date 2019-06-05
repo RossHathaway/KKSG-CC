@@ -41,6 +41,11 @@ const Header = () => (
         <button
           css={css`
             /* flex: 1; */
+            border: 3px solid darkred;
+            background-color: rgb(${lightYellow});
+            color: darkred;
+            font-size: 24px;
+            padding: 10px 15px;
           `}
         >
           Menu
@@ -58,6 +63,7 @@ const Header = () => (
           style={{
             color: `darkred`,
             textDecoration: `none`,
+            fontSize: `40px`,
           }}
         >
           Cape Cod Karma Kagyu Study Group

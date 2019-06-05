@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Cape Cod KKSG`,
     description: `A Karma Kagyu Tibetan Buddhist group in Cape Cod (Hyannis, MA) that meets for weekly meditations and organizes special events`,
-    author: `@gatsbyjs`,
+    author: `Ross Hathaway`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
