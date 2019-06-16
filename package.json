@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "Cape-Cod-Karma-Kagyu-Study-Group-Website",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "This is a Karma Kagyu Tibetan Buddhist group in Cape Cod (Hyannis, MA) that meets for weekly meditations and organizes special events. This website used gatsby-starter-default by Kyle Mathews <mathews.kyle@gmail.com> as a starting point.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Ross Hathaway",
   "dependencies": {
     "@emotion/core": "^10.0.10",
     "@emotion/styled": "^10.0.10",
