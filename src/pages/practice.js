@@ -6,14 +6,22 @@ import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const PracticePage = ({ data }) => (
+const PracticePage = props => (
   <Layout>
     <SEO title="About our practice" />
     <h1>Our Sunday Practice</h1>
+    <div />
     <Img
-      fluid={data.file.childImageSharp.fluid}
+      fluid={props.data.Chenrezig.childImageSharp.fluid}
       alt="image of Chenrezig, the Buddha of Compassion"
-      fadeIn="soft"
+      fadeIn={true}
+      style={{
+        // ...(props.style || {}),
+        maxWidth: "400px",
+        /*props.data.Chenrezig.childImageSharp.fluid
+            .presentationWidth,*/
+        // margin: "0 auto", // Used to center the image
+      }}
     />
     <p>Everyone is welcome to join us each Sunday from 11 am - 12 pm.</p>
     <p>
@@ -36,17 +44,40 @@ const PracticePage = ({ data }) => (
       <p>Hyannis, MA 02601</p>
       <p>U.S.A.</p>
     </div>
+    <Img
+      fluid={props.data.groupPic.childImageSharp.fluid}
+      alt="our group after a meditation at Evoke Yoga"
+      fadeIn={true}
+    />
   </Layout>
 )
 
 export default PracticePage
 
+// export const fluidMaxWidImg = graphql`
+//   fragment wideFluidImg on File {
+//     childImageSharp {
+//       fluid(maxWidth: 800) {
+//         ...GatsbyImageSharpFluid_withWebp
+//       }
+//     }
+//   }
+// `
+
 export const pageQuery = graphql`
   query {
-    file(relativePath: { eq: "BuddhaStatue-L U C H I C U O N G.jpg" }) {
+    groupPic: file(relativePath: { eq: "Our_Group.JPG" }) {
       childImageSharp {
-        fluid(maxWidth: 100) {
+        fluid(maxWidth: 800) {
           ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    Chenrezig: file(relativePath: { eq: "Chenrezig.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 500) {
+          ...GatsbyImageSharpFluid_withWebp
+          presentationWidth
         }
       }
     }

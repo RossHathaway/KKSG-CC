@@ -19,7 +19,7 @@ const Image = () => (
       query {
         imageName: file(relativePath: { eq: "Mandala.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 300) {
+            fluid(maxWidth: 800) {
               ...GatsbyImageSharpFluid
             }
           }
