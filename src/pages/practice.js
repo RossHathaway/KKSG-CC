@@ -15,9 +15,8 @@ const PracticePage = props => (
         display: flex;
         flex-wrap: wrap;
         align-items: flex-start;
+
         & > * {
-          /* flex-grow: 1; */
-          /* flex-shrink: 1; */
           flex: 1 1 auto;
           min-width: 200px;
         }
@@ -28,21 +27,24 @@ const PracticePage = props => (
         alt="image of Chenrezig, the Buddha of Compassion"
         fadeIn={true}
         style={{
-          // ...(props.style || {}),
           maxWidth: "400px",
-          // overflow: "visible !important",
-          // display: "inlineBlock",
-          // ...props.data.Chenrezig.childImageSharp.fluid.presentationWidth,
-          // margin: "0 auto", // Used to center the image
+          margin: "0 auto 30px", // Used to center the image
         }}
       />
       <div
         css={css`
-          /* width: 300px; */
           width: 350px;
+          margin: 0 30px 30px;
         `}
       >
-        <p>Everyone is welcome to join us each Sunday from 11 am - 12 pm.</p>
+        <h2
+          css={css`
+            margin: 0;
+            text-align: center;
+          `}
+        >
+          Everyone is welcome to join us each Sunday from 11 am - 12 pm.
+        </h2>
         <p>
           Our meditation involves doing a sadhana, which is a type of meditation
           that involves visualization, prayer, mantras, and silent meditation.
@@ -52,6 +54,7 @@ const PracticePage = props => (
         </p>
         <section
           css={css`
+            font-size: 24px;
             p {
               margin: 0.2rem;
             }
@@ -65,19 +68,6 @@ const PracticePage = props => (
           <p>U.S.A.</p>
         </section>
       </div>
-      {/* <Img
-        fluid={props.data.Chenrezig.childImageSharp.fluid}
-        alt="image of Chenrezig, the Buddha of Compassion"
-        fadeIn={true}
-        style={{
-          // ...(props.style || {}),
-          maxWidth: "400px",
-          overflow: "visible !important",
-          display: "inlineBlock",
-          // ...props.data.Chenrezig.childImageSharp.fluid.presentationWidth,
-          margin: "0 auto", // Used to center the image
-        }}
-      /> */}
     </div>
     <Img
       fluid={props.data.groupPic.childImageSharp.fluid}
